@@ -1,4 +1,4 @@
-[TODO: Replace with your Netflify status badge]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f912f14-3868-4989-acf5-ddfc62275ff5/deploy-status)](https://app.netlify.com/sites/savannahportfolio/deploys)
 
 # HTML and CSS Assessment
 
