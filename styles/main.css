@@ -58,9 +58,10 @@ width:fit-content;
     text-align: center; */
 
     clear: both;
-    margin-top: 20px;
+    margin-top: 50px;
     height: 200px;
     text-align: center;
+    padding: 10px;
 
     /* vertical-align: bottom; */
 }
@@ -72,10 +73,82 @@ width:fit-content;
     100%{color:aliceblue}
 
 }
+.social-media{
+    list-style: none;
+}
 
 p#bye{
 animation: changes 1s infinite;
 }
 
+/* #timeline{
+height: fit-content;
+width: fit-content;
 
+} */
 
+.timeL{
+    width: 900px;
+    height: 20px;
+    list-style: none;
+    margin: 100px auto;
+    text-align: justify;
+    background-color: gray;
+}
+
+.timeL:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
+
+.timeL li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: purple;
+	/* text-align: cent; */
+	line-height: 2;
+	position: relative;
+	border-radius: 50%;
+}
+
+.timeL li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.timeL li:nth-child(odd):before {
+	top: -50px;
+}
+.timeL li:nth-child(even):before {
+	bottom: -50px;
+}
+
+.timeL li:after {
+	display: block;
+	content: attr(data-text);
+    width: 200px;
+    height: 100px;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.timeL li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: 0px;
+	transform: translate(-50%, 100%);
+}
+
+.timeL li:nth-child(even):after {
+	top: 0;
+	margin-top: 0px;
+	transform: translate(-50%, -100%);
+
+}
